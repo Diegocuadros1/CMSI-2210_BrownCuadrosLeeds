@@ -1,0 +1,68 @@
+1) What is a computer system?
+It is a combination of both hardware and software working together to complete extremely quick functions. 
+The CPU fetches data from different places within the computer and decodes them and then sends instructions 
+to other parts of the computer telling them what to do.
+
+2) What are some of the parts of a computer system?
+CPU, GPU, RAM, input/output devices, ALU, address busses, registers. 
+
+3) What is the difference between a compiled language and an intepreted language?
+Compiled language requires a compiler to translate it to machine code before it can be executed. 
+Whereas interpreted language can be run and interpreted without needing to be translated or interpreted.
+
+4) Is C a compiled language?
+Yes, because it is one step away from being able to be run, that step is being translated into machine code. 
+
+5) Who invented the C language?
+Dennis Ritchie
+
+6) How long has C been in use?
+Since 1972.
+
+7) Is a compiler a translator?
+Yes, we believe it is because when it compiles code, it is translating (compiling) it from a more “advanced” 
+language to machine code. 
+
+8) Is an assembler a translator?
+Yes, because we also believe that an assembler translates assembly code into machine code, 
+and therefore translating (compiling) the code into 1s and 0s. 
+
+9) What is the command to list out the contents of a directory on a mac terminal window?
+ls
+
+10) What does the C function atof() do? 
+It gets a string and turns it into an actual number 
+
+11) What are the bottom two layers of a computer system? Give a brief desciption of each.
+The bottom 0 layer is digital logic, which consists of Circuits, Gates, and more, while the layer that comes 
+after that is the Control layer, which consists of microcode or hardwired systems.
+
+12) What are the three steps of the Von Neumann Architecture?
+The three steps are fetch, decode, and execute. Fetch grabs data, decode decodes or translates that data that 
+was grabbed into necessary instructions, and execute uses those instructions to do a certain task
+
+13) What is the purpose of an ALU?
+The purpose of an ALU is to execute decoded instruction, like small logic operations, and is responsible for 
+core data processing tasks of a CPU
+
+14) What is a register?
+A small location in the CPU that can store small and fast things, like memory addresses or instructions being executed.
+
+15) What is one difference between Application software and System software?
+Application software is designed for the user and to help them navigate apps and the interface more efficiently 
+while system software is designed to help the computer run more efficiently. 
+
+16) Is the phrase cmp rdi, rsi machine language?
+No, because machine language is in binary. 
+
+17) How many buses are included in the system bus?
+There are 3: the address bus, the control bus, and the data bus
+
+18) What is the decimal value of 100101112? 
+75
+
+19) What is the decimal value of 111111112?
+255
+
+20) What is the largest unsigned integer value that will fit into 16 bits? 
+65535
