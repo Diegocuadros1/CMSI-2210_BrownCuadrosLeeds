@@ -1,5 +1,4 @@
-global      
-        _main                                ; declares the starting entry point
+global      _main                   ; declares the starting entry point
          extern      _printf                 ; we'll use the "C" library for now
 
          section .text                       ; code starts here
