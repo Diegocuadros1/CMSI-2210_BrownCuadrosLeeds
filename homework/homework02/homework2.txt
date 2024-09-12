@@ -1,3 +1,7 @@
+Nick Leeds
+Diego Cuadros
+Reggie Brown
+
 1) What is a computer system?
 It is a combination of both hardware and software working together to complete extremely quick functions. 
 The CPU fetches data from different places within the computer and decodes them and then sends instructions 
