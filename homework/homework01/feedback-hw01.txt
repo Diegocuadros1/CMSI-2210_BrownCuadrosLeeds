@@ -11,19 +11,19 @@ SAYHELLO.C
    prompts user         1/1 pt.
    reads input          1/1 pt.
    displays hello name  1/1 pt.
-SAYHELLO.ASM
-   file exists          1/1 pt.
-   file assembles       1/1 pt.
-   programruns          1/1 pt.
+SAYHELLO.ASM [optional challenge]
+   file exists
+   file assembles
+   programruns
 GENERAL
    code style           1/1 pt.
 
-Total possible points 10
+Total possible points 7
 
 ========================================================
 
 TOTAL EARNED POINTS:
-   you earned 10/10 which is 100% which is an A-plus
+   you earned 7/7 which is 100% which is an A-plus
 
 ========================================================
 SPECIFIC COMMENTS/FEEDBACK:
