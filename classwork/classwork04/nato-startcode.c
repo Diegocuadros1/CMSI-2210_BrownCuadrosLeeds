@@ -60,4 +60,25 @@ int main(int argc, char *argv[])
      *    array, so that you can use that index to access the
      *    NATO array.  At each match, print the NATO word.
      */
+
+    for (i = 0; i < argc; i++)
+    {
+        letter = argv[i][0]
+
+            for (j = 0; j <= 26; j++)
+        {
+            if (letter == ALPHABET[j])
+            {
+                printf("  %s\n", NATO[j]);
+            }
+        }
+    }
 }
+
+argv = [ "one", "two", "three" ] argc = 3
+
+    // loop through the words in arv
+    // for every word, get the first letter
+    // loop through the ALPHABET array to find that letter
+    // match that index with the NATO array
+    // print the NATO word
