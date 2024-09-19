@@ -1,20 +1,20 @@
 Hex FAC3 in binary is: 1111 1010 1100 0011
 Hex FAC3 as an unsigned decimal is: 64,195
-Hex FAC3 as a signed decimal is: -2,620
+Hex FAC3 as a signed decimal is: -1,341
 Hex 0064 in binary is: 0110 0100 
 Hex 0064 as an unsigned decimal is: 100
-Hex 0064 as a signed decimal is: 100
+Hex 0064 as a signed decimal is: -156
 Hex 8000 in binary is: 1000 0000 0000 0000
 Hex 8000 as an unsigned decimal is: 32,768
 Hex 8000 as a signed decimal is: -32,768
 Decimal 8000 encoded in 16-bits (unsigned) is in hex: 1F40
 Decimal 8000 encoded in 16-bits (signed) is in hex: 1F40
-Decimal -11 encoded in 16-bits (signed) is in hex: 
-Decimal -32717 encoded in 16-bits (signed) is in hex:
-Binary 10111101 in hex is:
-Binary 1011110100000001 as an unsigned decimal is:
+Decimal -11 encoded in 16-bits (signed) is in hex: 00F5
+Decimal -32717 encoded in 16-bits (signed) is in hex: 8033
+Binary 10111101 in hex is:00BD
+Binary 1011110100000001 as an unsigned decimal is: 48,385
 Binary 1011110100000001 as a signed decimal is: -17151
-If we had 20-bit registers, the smallest signed decimal integer value would be: 262,145
+If we had 20-bit registers, the smallest signed decimal integer value would be: 1,048,575
 If we had 20-bit registers, the largest signed decimal integer value would be: 524,287
 The modular sum of 16-bit hex values 3511 + 4FFC is: 850D
 The saturated sum of 16-bit hex values 3511 + 4FFC is: 7FFD
