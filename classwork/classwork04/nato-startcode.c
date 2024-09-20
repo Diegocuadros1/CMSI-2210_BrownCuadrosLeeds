@@ -63,9 +63,9 @@ int main(int argc, char *argv[])
 
     for (i = 0; i < argc; i++)
     {
-        letter = argv[i][0]
+        letter = argv[i][0];
 
-            for (j = 0; j <= 26; j++)
+        for (j = 0; j <= 26; j++)
         {
             if (letter == ALPHABET[j])
             {
@@ -75,10 +75,10 @@ int main(int argc, char *argv[])
     }
 }
 
-argv = [ "one", "two", "three" ] argc = 3
+// argv = [ "one", "two", "three" ] argc = 3
 
-    // loop through the words in arv
-    // for every word, get the first letter
-    // loop through the ALPHABET array to find that letter
-    // match that index with the NATO array
-    // print the NATO word
+// loop through the words in arv
+// for every word, get the first letter
+// loop through the ALPHABET array to find that letter
+// match that index with the NATO array
+// print the NATO word
