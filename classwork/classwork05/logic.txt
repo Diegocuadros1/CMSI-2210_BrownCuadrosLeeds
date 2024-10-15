@@ -1,0 +1,9 @@
+1)A three-input system has two of its inputs going to a two-input AND 
+gate and the third going to an INVERTER. The outputs of the AND gate and the inverter are inputs to a single OR gate, whose output goes to an INVERTER which provides the output for the system.
+2)A three-input system has two of its inputs going to a two-input 
+NAND gate. The third input and the output of the NAND gate are inputs to an AND gate which provides the output for the system.
+3)A three-input system has A, B, and X inputs. A and X are both \
+inputs to an AND gate. The X input also goes to an INVERTER whose output goes with B to another AND gate. The outputs of both the AND gates go to an OR gate which provides the output for the system.
+4)A NOR gate is an OR gate with an INVERTER on the output. Use a truth table to determine if this is the same thing as an AND gate in terms of its outputs.
+5)A four-input system has A, B, C, and D inputs. A goes to an INVERTER
+and then goes to an XOR gate with B. The output of the XOR gate goes to an AND gate which is paired with the C input. The C input also goes to an INVERTER which then goes to an OR gate with the D input. The output of the OR gate and the output of the AND gate go to a NAND gate which provides the output for the system.

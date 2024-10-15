@@ -1,0 +1,15 @@
+Convert 101 to decimal 5
+Convert 1010101 to decimal 85
+Convert 0101010 to decimal 42
+Convert 11111111 to decimal 255
+Convert 1100110011001101 to decimal 52,429
+Convert 11111111111111111111 to decimal 1,048,575
+Convert 111100001111 to decimal 3,855
+Convert 100000000000 to decimal 2,048
+Convert 101010111100110111101111 to decimal 11,259,375
+Convert 542110 to binary 1000 0100 0101 1001 1110
+Convert 8010 to binary  1 1111 0100 1010
+Convert 1234510 to binary 1 0010 1101 0110 0100 1110
+Convert 1510 to binary  101 1110 0110
+Convert 6553510 to binary  110 0011 1111 1111 1010 0110
+Convert 3276710 to binary  11 0001 1111 1111 1010 0110
