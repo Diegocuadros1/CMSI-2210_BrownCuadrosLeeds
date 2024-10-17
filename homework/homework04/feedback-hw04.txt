@@ -20,8 +20,8 @@ REGISTER OPERATIONS
 STANLEY/PENGUIN ASSEMBLY
    Q4 - program 1a           11 pts.
    Q5 - program 1b           11 pts.
-   Q6 - GCD prog.            11 pts.
-   Q7 - swap frag             5 pts.
+   Q6 - GCD prog.            10 pts.
+   Q7 - swap frag             2 pts.
    Q8 - jmp to addr           5 pts.
 
 REGISTER INVESTIGATION
@@ -34,14 +34,20 @@ Total possible points        90 points
 ========================================================
 
 TOTAL EARNED POINTS:
-   you earned 0.0/ 90.0 which is 0% which is not the greatest score...
+   you earned 86.0/ 90.0 which is 95.56% which would be an A
+   minus 10% for lateness makes 85.56 which is a B
 
 ========================================================
 SPECIFIC COMMENTS/FEEDBACK:
 
-I can't evaluate what isn't there...  this assignment was due last week.
+problem 6: I think you have a and b mixed up in the first couple of lines,
+   but the rest of the algorithm is correct.
 
-sorry.
+problem 7: this isn't actually going to swap anything.  You are reading a
+   value and storing it to var, then loading a value from memory and storing
+   THAT value to var, which overwrites the value you read from the port.
+
+Well done!
 
 ========================================================
 SEMESTER SCORE SO FAR:
