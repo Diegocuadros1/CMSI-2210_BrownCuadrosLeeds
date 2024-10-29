@@ -16,14 +16,14 @@
 16)Binary 1011110100000001 as a signed decimal is: -17151
 17)If we had 20-bit registers, the smallest signed decimal integer value would be: 1,048,575
 18)If we had 20-bit registers, the largest signed decimal integer value would be: 524,287
-19)The modular sum of 16-bit hex values 3511 + 4FFC is: 850D
-20)The saturated sum of 16-bit hex values 3511 + 4FFC is: 7FFD
+19)The modular sum of 16-bit hex values 3511 + 4FFC is: 850D *same modular and saturated bc no carry
+--20)The saturated sum of 16-bit hex values 3511 + 4FFC is: 7FFD
 The 16-bit operation 0x3511 + 0x4FFC has a carry (Y or N): Y
 The 16-bit operation 0x3511 + 0x4FFC has a overflows (Y or N): N
---The modular sum of 16-bit hex values 6159 + F702 is: 1 585B
-The saturated sum of 16-bit hex values 6159 + F702 is: F85B
-The 16-bit operation 0x6159 + 0xF702 has a carry (Y or N): Y
-The 16-bit operation 0x6159 + 0xF702 has a overflows (Y or N): Y
+--The modular sum of 16-bit hex values 6159 + F702 is: 1 585B *REAL ANSWER: 585B 1 is ignored and carry flag raised
+The saturated sum of 16-bit hex values 6159 + F702 is: F85B *REAL ANSWER: FFFF maxed out
+The 16-bit operation 0x6159 + 0xF702 has a carry (Y or N): Y *CARRY ONLY TRIGGERS WHEN 1 IS CARRIED OVER AT THE END
+The 16-bit operation 0x6159 + 0xF702 has a overflows (Y or N): Y *OVERFLOW HAPPENS WHEN END IS TWO NEGATIVES OR TWO POSITIVES
 The modular sum of 16-bit hex values EEEE + C00C is: 1 AEFA
 The saturated sum of 16-bit hex values EEEE + C00C is: FEEF
 The 16-bit operation 9EEE + AB0C has a carry (Y or N): Y
