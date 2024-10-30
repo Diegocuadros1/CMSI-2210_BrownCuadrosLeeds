@@ -7,6 +7,7 @@
 // binary digits which correspond to the base-10 value. For example, running the
 //  program with dec2bin 65535 [or just dec2bin if asking the user] should
 //  produce the output string 00000000000000001111111111111111. Use unsigned integers.
+
 int main(int argc, char *argv[])
 {
 
