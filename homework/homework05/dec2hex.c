@@ -36,9 +36,13 @@ int main(int argc, char *argv[])
     {
         printf("0x%08X\n", (unsigned int)num);
     }
-    else
+    else if (byte_size == 16)
     {
         printf("0x%016llX\n", num);
+    }
+    else
+    {
+        printf("0x%032llX\n", num);
     }
 
     printf("\n");
