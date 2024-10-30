@@ -12,7 +12,8 @@ int main(int argc, char *argv[])
 
     if (argc < 2)
     {
-        printf("Please provide an input");
+        printf("Please provide an input\n");
+        return 1;
     }
     int num = atof(argv[1]);
 
@@ -25,7 +26,7 @@ int main(int argc, char *argv[])
         num = num >> 1;
     }
 
-    for (int j = 0; j < 33; j++)
+    for (int j = 1; j < 33; j++)
     {
         printf("%c", binary[j]);
     }
