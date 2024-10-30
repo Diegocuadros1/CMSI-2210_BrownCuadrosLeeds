@@ -31,18 +31,18 @@ int main(int argc, char *argv[])
     width++; // Add extra space for padding
 
     // Print header row
-    printf("%*s", field_width, ""); // Empty top-left corner
+    printf("%*s", width, ""); // Empty top-left corner
     for (int i = 2; i <= num; i++)
     {
-        printf("%*d", field_width, i);
+        printf("%*d", width, i);
     }
     printf("\n");
 
     // Print separator line
-    printf("%*s", field_width, "");
-    for (int i = 2; i <= N; i++)
+    printf("%*s", width, " ");
+    for (int i = 2; i <= num; i++)
     {
-        for (int j = 0; j < field_width; j++)
+        for (int j = 0; j < width; j++)
         {
             printf("-");
         }
@@ -50,12 +50,12 @@ int main(int argc, char *argv[])
     printf("\n");
 
     // Print times tables
-    for (int i = 2; i <= N; i++)
+    for (int i = 2; i <= num; i++)
     {
-        printf("%*d|", field_width - 1, i); // Left column with separator
-        for (int j = 2; j <= N; j++)
+        printf("%*d|", width - 1, i); // Left column with separator
+        for (int j = 2; j <= num; j++)
         {
-            printf("%*d", field_width, i * j);
+            printf("%*d", width, i * j);
         }
         printf("\n");
     }
