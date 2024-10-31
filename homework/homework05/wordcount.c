@@ -11,24 +11,27 @@ int main(int argc, char *argv[]) {
 
     // Open the file in read mode
     FILE *fp = fopen(argv[1], "r");
-    
+    if (fp == NULL) {
+        exit(1);
+    }
 
     int count = 0;     // Word count
-    int in_word = 1;   // Flag to track if currently inside a word
+    int inWord = 0;    // Flag to track if currently inside a word
     int c;             // Character read from file
 
     // Read the file character by character
     while ((c = fgetc(fp)) != EOF) {
-        if (isspace(c)) {
-            count++;
-            in_word = 0; // If the character is whitespace, we're not in a word
-            
-        } else if (!in_word) {
-            in_word = 1; // Transition from whitespace to a word character
-            //count++;
+        if (isspace(c)) { // If the character is whitespace, we're not in a word
+            inWord = 0;
+            count ++;
+
+        } else if (inWord != 0) { // Transition from whitespace to a word character
+            inWord = 1;
+
         }
+        // If already in a word and character is not whitespace, continue
     }
-// Output the word count
+
     printf("Number of words: %d\n", count);
 
     return 0;
