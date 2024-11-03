@@ -55,9 +55,9 @@ SEMESTER SCORE SO FAR:
    homework01 ~ 100.00% of  5 points =  5.00 points
    homework02 ~  92.50% of  5 points =  4.63 points
    homework03 ~  77.63% of  5 points =  3.88 points
-   homework04 ~   0.00% of  5 points =  0.00 points
-                                total: 13.51 out of 20.0 = 67.56%
-                                which is a D-plus
+   homework04 ~  85.56% of  5 points =  4.28 points
+                                total: 17.79 out of 20.0 = 88.94%
+                                which is a B-plus
 
 Please feel free to come see me during office hours to get some help.  The
 hours are published at the top of the website syllabus page.
