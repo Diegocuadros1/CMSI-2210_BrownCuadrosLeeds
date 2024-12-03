@@ -1,0 +1,90 @@
+/ GCD
+
+int gcd(a, b)
+{
+    if (b == 0)
+    {
+        return a;
+    }
+    else
+    {
+        return gcd(b, a % b);
+    }
+}
+
+// Stanley Penguin
+
+// a: 24
+// b: 18
+// amodb: 0
+// start: Load     b
+//        JZ       done
+//        Load     a
+//        mod      b
+//        Store    amodb
+//        Load     b
+//        Store    a
+//        Load     amodb
+//        Store    b
+//        Jmp      start
+// done:  load     a
+//        write    0x100
+// end:   jmp      end
+
+// problem 1
+//  global main
+//  extern printf
+//  section .text
+
+// mov rdx, 24
+// mov rbx, 18
+// mov rdx, 0
+
+// cmp rbx, 0x00
+
+// problem 2 fundGCDfunc.nasm | findGCDfunctest.c
+// Recreate the above code and create a new file for problem 2
+// create file GCDfuncTest.c and run it to test the assembly function
+
+// problem 3
+// Count the number of ones in a byte in a number of
+// write a nasm program that counts the number of ones in the byte
+// if the number is odd, print a 1, else print a 0
+
+//     mov rax, 0x17 ; this is the number to check if even or odd
+//     AND rax, 0x01 ; check if the number is odd by ANDing it with 0x01
+//     CMP rax, 0x01 ; check if the number is odd by comparing it to 0x01
+//     JE count      ; if the number is odd, jump to count
+
+// next: SHR rax, 0x01 ; shift right by 1
+//       JMP top       ; jump to top
+
+// count: inc rcx ; increment the count rcx
+//        jmp next ; jump to next
+
+// problem 4 do somthing about network byte order
+
+// problem 5
+// hton() make network byte order
+// ntoh() make network to host byte order
+
+// #include <sys/anet.h>
+
+// problem 6
+// makeNBON.nasm
+
+// calls c function
+
+// takes the maximum of three numbers
+// global maxofthree
+// section .text
+
+// maxofthree:
+//     mov rax, rdi
+//     cmp rax, rsi
+//     cmovl rax, rsi
+//     cmp rax, rdx
+//     cmovl rax, rdx
+//     ret
+
+// gcc -S  //generate assembly from source
