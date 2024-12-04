@@ -1,46 +1,49 @@
-       
 section .data
-num1   dq     24
-num2   dq     18
-str db "GCD: %d", 10, 0
-
-section .bss
-        gcd_res resq 1
+        format_in: db "%d", 0
+        format_out: db "the GCD of these two numbers is %d", 10, 0
+        num1 dd 1
+        num2 dd 1        
 
 section .text
-global _main
-exern _printf
-
+        global _main
+        extern _printf
+        extern _scanf
 _main: 
-        ; moving rax rbx into num1 and num2
-        mov rax, num1
-        mov rbx, num2
+        ;first number
+        push num1
+        push format_in
+        call _scanf
+        add esp, 8
+
+        ;second number
+        push num2
+        push format_in
+        call _scanf
+        add esp, 8
+
+        ; moving num1 & num2 into eax & ebx
+        mov eax, [num1]
+        mov ebx, [num2]
 
 gcd_loop:
-        cmp rbx, 0      ;check if rbx is 0
-        je done         ;jump to done if rbx is 0
+        cmp ebx, 0      ;check if ebx is 0
+        je done         ;jump to done if ebx is 0
 
-        xor rdx, rdx    ;clear rdx
-        div rbx         ;divide rax by rbx
-        mov rax, rbx    ;move rbx into rax
-        mov rbx, rdx    ;move rdx into rbx
-        jmp gcd_loop
+        ; eax % ebx
+        xor edx, edx    ;clear edx
+        div ebx         ;divide a by b quotient in eax, remainder in edx
 
+        ;updating for next iteration
+        mov eax, ebx     ;set a to old b
+        mov ebx, edx    ;set b to remainer d
+
+        jmp gcd_loop    ; jump back to beginning
 
 done:
-        mov qword [gcd_res], rax
+        ;eax contains gcd
+        push eax             ; Push GCD value onto the stack
+        push format_out      ; Push address of format string onto the stack
+        call _printf         ; Call printf
+        add esp, 8           ; Clean up the stack (2 arguments * 4 bytes each)
 
-        lea rdi, [str]
-        mov rsi, rax
-        xor rax, rax             
-        call _printf
-
-        ; Exit the program
-        mov rax, 60               ; sys_exit syscall number
-        xor rdi, rdi              ; Exit code 0
-        syscall
-
-section .data
-num1:   equ     24
-num2:   equ     18
-modnums:   equ   0
+        ret                  ;exit program
