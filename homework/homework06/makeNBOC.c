@@ -1,2 +1,2 @@
 HELP
-printf(%d dhdhsdis)
+printf(help)
