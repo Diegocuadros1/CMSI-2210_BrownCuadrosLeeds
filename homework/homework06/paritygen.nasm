@@ -41,15 +41,13 @@ skip_increment:
     jz even_count       ; If zero flag is set, count is even
 
 odd_count:
-    ; Count is odd, parity bit should be 0
-    ; Print the message for parity bit 0
+    ; Count is odd, print the message for parity bit 0
     push msg_odd
     call _printf
     jmp exit_program
 
 even_count:
-    ; Count is even, parity bit should be 1
-    ; Print the message for parity bit 1
+    ; Count is even print the message for parity bit 1
     push msg_even
     call _printf
     jmp exit_program
@@ -59,7 +57,3 @@ exit_program:
     mov eax, 1          ; sys_exit syscall number
     mov ebx, 0          ; Exit code 0
     int 80h             ; Make syscall
-
-section .data
-len_msg_even equ $ - msg_even
-len_msg_odd  equ $ - msg_odd

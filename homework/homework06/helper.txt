@@ -18,17 +18,49 @@ int gcd(a, b)
 // b: 18
 // amodb: 0
 // start: Load     b
-//        JZ       done
-//        Load     a
-//        mod      b
-//        Store    amodb
-//        Load     b
-//        Store    a
-//        Load     amodb
-//        Store    b
-//        Jmp      start
-// done:  load     a
-//        write    0x100
+//        JZ       done_start:
+    ; Prompt and read first number into buffer1
+    ; (Code omitted for brevity)
+
+    ; Convert first number to integer
+    mov esi, buffer1
+    call atoi
+    mov [num1], eax         ; Store the first number
+
+    ; Prompt and read second number into buffer2
+    ; (Code omitted for brevity)
+
+    ; Convert second number to integer
+    mov esi, buffer2
+    call atoi
+    mov [num2], eax         ; Store the second number
+
+    ; Compute GCD
+    mov eax, [num1]
+    mov ebx, [num2]
+    call gcd                ; Result in eax
+
+    ; Convert GCD result to string
+    mov esi, result_buffer + 20 ; Point to the end of the buffer
+    call itoa               ; esi will point to the start of the string
+
+    ; Write the result to stdout
+    mov edx, result_buffer + 20 - esi ; Calculate string length
+    mov ecx, esi            ; Pointer to the result string
+    mov eax, 4              ; sys_write
+    mov ebx, 1              ; stdout
+    int 0x80
+
+    ; Exit
+    mov eax, 1              ; sys_exit
+    xor ebx, ebx
+    int 0x80
+
+section .bss
+    num1 resd 1
+    num2 resd 1
+    result_buffer resb 20
+
 // end:   jmp      end
 
 // problem 1
