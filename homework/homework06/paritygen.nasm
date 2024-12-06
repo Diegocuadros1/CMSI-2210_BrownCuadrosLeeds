@@ -1,10 +1,10 @@
 section .data
     ; Define the byte of data we want to check
-    byte_data db 01101101b  ; Example byte: 01101001
+    byte_data db 01101001b  ; Example byte: 01101001
 
     ; Message formats for output
-    msg_even db "Parity Bit (Odd Parity): 1", 10, 0
-    msg_odd  db "Parity Bit (Odd Parity): 0", 10, 0
+    msg_even db "Parity Bit: 1", 10, 0
+    msg_odd  db "Parity Bit: 0", 10, 0
 
 
 section .text
