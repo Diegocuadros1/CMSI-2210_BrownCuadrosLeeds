@@ -1,0 +1,85 @@
+
+
+Evaluation Criteria ~ homework06
+CMSI 2210 Section all Fall 2023
+=================================
+                                    score
+FINDGCD.NASM                        ------
+   nasm file assembles  [5 pts.]    5 pts.
+   nasm runs            [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+GCDFINDER
+   nasm file assembles  [5 pts.]    5 pts.
+   gcdFinder.c compiles [5 pts.]    5 pts.
+   link both files OK   [5 pts.]    5 pts.
+   nasm returns value   [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+PARITYGEN
+   nasm file assembles  [5 pts.]    5 pts.
+   nasm runs            [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+WHICHENDISUP
+   compiles no errors   [5 pts.]    5 pts.
+   runs no errors       [5 pts.]    5 pts.
+MAKENBOC.C
+   compiles no errors   [5 pts.]    5 pts.
+   uses previous func.  [5 pts.]    5 pts.
+   tester compiles      [5 pts.]    5 pts.
+   tester runs          [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+MAKENBO.NASM
+   nasm file assembles  [5 pts.]    5 pts.
+   link all files OK    [5 pts.]    5 pts.
+   calls "C" function   [5 pts.]    5 pts.
+   output correct       [3 pts.]    3 pts.
+
+Total possible points 100
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 100.00/100.00 which is 100% which is an A-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+problem 1 findGCD.nasm
+   perfect!
+
+problem 2 findGCDfunc.nasm & gcdFinder.c
+   perfect!
+
+problem 3 paritygen.nasm
+   perfect!
+
+problem 4 whichEndIsUp.c
+   perfect!
+
+problem 5 makeNBOC.c & makeNBOCtest.c
+   perfect!
+
+problem 6 makeNBOC.c & makeNBON.nasm
+   perfect!
+
+WOW!!!  EXCELLENT WORK!
+========================================================
+SEMESTER HOMEWORK TOTALS:
+
+   homework01 ~ 100.00% of  5 points =  5.00 points
+   homework02 ~  92.50% of  5 points =  4.63 points
+   homework03 ~  77.63% of  5 points =  3.88 points
+   homework04 ~  85.56% of  5 points =  4.28 points
+   homework05 ~ 100.00% of 10 points = 10.00 points
+   homework06 ~ 100.00% of 15 points = 15.00 points
+                       semester total: 42.79 out of 45.00 = 95.09%
+                             which is an A on the homeworks
+
+Great work on this difficult assignment!  You were smart to use win32 in the
+programs instead of trying to use win64...  One thing to keep in mind in the
+future is to include a small header at the top of your file that tells the
+person building your program what commands to use ~ very helpful for when a
+command line option like '-lws2_32' is required!
+
+It's been a great pleasure having you in class and I look forward to seeing
+you in future classes.  Good luck on the final!
+
